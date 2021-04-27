@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class Vehiculo {
     public static int tamano;
     public static int cantidad = 0;
