@@ -1,5 +1,3 @@
-package com.company;
-
 public class Sensor {
     public static Sensor[][] sensores;
     private int estado=0;
