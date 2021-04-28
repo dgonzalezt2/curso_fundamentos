@@ -1,13 +1,16 @@
 public class Sensor {
+    //Atributos
     public static Sensor[][] sensores;
     private int estado=0;
 
+    //Constructores
     public Sensor(){}
 
     public Sensor(int e){
         this.estado=e;
     }
 
+    //Get & Set estado
     public int getEstado() {
         return this.estado;
     }
@@ -25,7 +28,7 @@ public class Sensor {
         }
     }
 
-    public static String sensorLibre(){
+    public static String sensorLibre(){//Indica los pisos con espacios disponibles
         String resultados ="";
         for(int row=0;row<sensores.length;row++){
             for (int col=0;col<sensores[0].length;col++)
@@ -39,7 +42,7 @@ public class Sensor {
         return resultados;
     }
 
-    public static String sensoresEstado(){
+    public static String sensoresEstado(){//Indica el estado de TODOS los sensores
         String resultados ="";
         for(int row=0;row<sensores.length;row++){
             for (int col=0;col<sensores[0].length;col++)
@@ -53,5 +56,5 @@ public class Sensor {
             }
         }
         return resultados;
-    }
+    } 
 }
