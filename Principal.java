@@ -108,23 +108,7 @@ public class Principal {
                 case 8:
                     System.out.println("Ingrese el color a buscar: ");
                     String color=entrada.next();
-                    int cont=0;
-                    for(int i=0;i<pisos;i++){
-                        for(int j=0;j<espacio;j++){
-                            if(Vehiculo.vehiculos[i][j]!=null){
-                                if(Vehiculo.vehiculos[i][j].getColor().equalsIgnoreCase(color)){
-                                    System.out.print("Piso: "+(i+1)+" || Espacio: "+(j+1)+"  -> ");
-                                    System.out.println(Vehiculo.vehiculos[i][j].toString());
-                                    cont++;
-                                }
-                            }
-                        }
-
-                    }
-                    if(cont==0){
-                        System.out.println("No se han ingresado vehículos con el color solicitado");
-                    }
-                    System.out.println("");
+                    System.out.println(Vehiculo.buscarColorDeVehiculo(color));
                     break;
                 case 9:
                     if(Vehiculo.cantidadVehiculos()!=0){
@@ -133,9 +117,10 @@ public class Principal {
                         int h=0;
                         for(int i=0;i<pisos;i++){
                             for(int j=0;j<espacio;j++){
-
-                                orden[h]=Vehiculo.vehiculos[i][j];
-                                h++;
+                                if(Vehiculo.vehiculos[i][j]!=null){
+                                    orden[h]=Vehiculo.vehiculos[i][j];
+                                    h++;
+                                }
                             }
 
                         }
@@ -170,6 +155,5 @@ public class Principal {
             menu = entrada.nextInt();
         }
         System.out.println("Saliendo...");
-
     }
 }
