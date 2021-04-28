@@ -1,4 +1,5 @@
 public class Vehiculo {
+    //atributos de la clase
     public static int tamano;
     public static int cantidad = 0;
     private String placa;
