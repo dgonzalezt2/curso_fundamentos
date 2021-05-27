@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.*;
-public class Principal2
+public class Principal2{
     public static void main(String[] args) {
         Scanner entrada=new Scanner(System.in);
         int azar=(int)((Math.random()*4)+1);//Creamos un valor al azar entre 1-4
