@@ -241,7 +241,7 @@ public class Principal {
             System.out.println("5. Historial de cantidad de vehiculos parqueados");
             System.out.println("6. Ver estado del sensor");
             System.out.println("7. Ver estado de todos los sensores");
-            System.out.println("8. Mostrar todos los autos que tengan el color solicitado");
+            System.out.println("8. Mostrar todos los vehiculos que tengan el color solicitado");
             System.out.println("9. Mostrar todos los vehículos ordenados de menor a mayor por valor comercial");
             System.out.println("10. Retirar vehiculo");
             System.out.println("11. Información vehiculos en archivo");
